@@ -1,9 +1,7 @@
-gsap.to("#circle",{
-    x:1100,
+gsap.from("h1",{
+    x:-500,
     duration:1,
-    delay:1,
-    rotate:360,
-    repeat:-1,
-    yoyo:true,
-    ease:"linear"
+    delay:0.5,
+    opacity:0,
+    stagger:0.3
 })

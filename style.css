@@ -13,10 +13,8 @@ body{
     background-color: #111;
     padding: 20px;
 }
+h1{
+    font-size: 10vw;
+    color: #fff;
 
-#circle{
-    height: 300px;
-    width: 300px;
-    background-color: lightblue;
-    border-radius: 10px;
 }
