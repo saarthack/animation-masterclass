@@ -1,0 +1,9 @@
+gsap.to("#circle",{
+    x:1100,
+    duration:1,
+    delay:1,
+    rotate:360,
+    repeat:-1,
+    yoyo:true,
+    ease:"linear"
+})
