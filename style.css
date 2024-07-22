@@ -13,8 +13,25 @@ body{
     background-color: #111;
     padding: 20px;
 }
-h1{
-    font-size: 10vw;
-    color: #fff;
 
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#box3{
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
