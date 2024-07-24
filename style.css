@@ -1,8 +1,3 @@
-@font-face {
-    font-family: monu;
-    src: url(./MonumentExtended-Regular.otf);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -19,101 +14,34 @@ body{
     background-color: #111;
     overflow-x: hidden;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 40px 60px;
-    position: fixed;
-}
-.nav-part2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-}
-nav h2{
-    font-size: 45px;
-}
-nav h4{
-    font-size: 30px;
-}
-main{
+
+#page1{
     height: 100%;
     width: 100%;
+    background-color: #111;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-size: cover; */
 }
-.center{
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    flex-direction: column;
-    text-align: center;
 }
-.center h1{
-    font-size: 100px;
-    font-family: monu;
-    font-weight: 100;
-
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.center h1 span{
-    color: lightseagreen;
-    font-family: monu;
-
-}
-.center p{
-    font-size: 29px;
-    font-family: monu;
-    font-weight: 100;
-    width: 40%;
-    color: #777;
-
-}
-.center button{
-    background-color: lightseagreen;
-    padding: 29px 100px;
-    font-size: 28px;
-    font-family: monu;
-    cursor: pointer;
-    margin-top: 30px;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-weight: 100;
-}
-#img1{
+#box{
     height: 300px;
-    width: 300px;
+    width: 320px;
+    background-color: crimson;
     border-radius: 10px;
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    box-shadow: 0 10px 50px rgba(109, 109, 109, 0.3);
-}
-#img2{
-    height: 350px;
-    border-radius: 4px;
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    box-shadow: 0 10px 50px rgba(109, 109, 109, 0.091);
-}
-#img3{
-    height: 300px;
-    position: absolute;
-    top: 16%;
-    left: 10%;
-    filter: drop-shadow(0 10px 50px #9297bb65);
-}
-#img4{
-    height: 300px;
-    position: absolute;
-    top: 16%;
-    right: 12%;
-    filter: drop-shadow(0 10px 50px #9297bb52);
 }
