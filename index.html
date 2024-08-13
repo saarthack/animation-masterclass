@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div id="main">
-        <div id="page1"></div>
-        <div id="page2"></div>
-        <div id="page3"></div>
+    <div id="main" data-scroll-container >
+        <div id="page1" data-scroll>
+            <div id="box"></div>
+        </div>
+        <div id="page2" data-scroll>
+            <div id="box"></div>
+            <div id="box" data-scroll data-scroll-speed="-10" data-scroll-direction="horizontal"></div>
+            <div id="box"></div>
+        </div>
+        <div id="page3" data-scroll>
+            <div id="box"></div>
+        </div>
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="script.js"></script>
 </body>

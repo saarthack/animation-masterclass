@@ -10,19 +10,21 @@ body {
     width: 100%;
 }
 
-
-#page1{
+#page1,#page2,#page3{
     height: 100vh;
     width: 100%;
-    background-color: lightblue;
+    background-color: rgb(80, 211, 254);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 #page2{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(82, 164, 191);
+    background-color: rgb(133, 197, 218);
 }
-#page3{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(7, 103, 134);
+
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+    border-radius: 10px;
 }
