@@ -3,41 +3,31 @@
     padding: 0;
     box-sizing: border-box;
     font-family:gilroy;
-    color: #fff;
 }
 html,
 body {
     height: 100%;
     width: 100%;
 }
-#page1{
-    height: 100%;
-    width: 100%;
+body{
     background-color: #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    
 }
 h1{
-    font-size: 100px;
-    line-height: 100px;
-    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    mix-blend-mode: difference;
+    font-size: 130px;
+    font-weight: 100;
 }
-
-h1 span{
-    display: inline-block;
-}
-
-
-/* 
-block - puri line barabar jagah lega , 
-transform vaali properties kaam karengi
-
-
-inline - jitna size utni jagah lega, 
-transform kaam nahi karega 
-
-
-inline-block - jitna size utni jagah, 
-transform bhi kaam karega 
-*/

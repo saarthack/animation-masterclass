@@ -1,33 +1,21 @@
-var h1Text = document.querySelector("h1").textContent
+var body = document.querySelector("body")
+var h1 = document.querySelector("h1")
 
-var splittedText = h1Text.split("")
-
-var clutter = ""
-
-splittedText.forEach(function (elem, idx) {
-  if (splittedText.length / 2 > idx) {
-    clutter += `<span class="a">${elem}</span>`
-  } else {
-    clutter += `<span class="b">${elem}</span>`
-  }
-  
+body.addEventListener("mousemove",function(dets){
+  gsap.to("#cursor",{
+    x:dets.x,
+    y:dets.y
+  })
 })
 
-
-document.querySelector("h1").innerHTML = clutter
-
-
-gsap.from("h1 .a", {
-  opacity: 0,
-  duration: 0.6,
-  stagger: 0.2,
-  delay: 0.4,
-  y: 60
+h1.addEventListener("mouseenter",function(){
+  gsap.to("#cursor",{
+    scale:5
+  })
 })
-gsap.from("h1 .b", {
-  opacity: 0,
-  duration: 0.6,
-  stagger: -0.2,
-  delay: 0.4,
-  y: 60
+
+h1.addEventListener("mouseleave",function(){
+  gsap.to("#cursor",{
+    scale:1
+  })
 })
