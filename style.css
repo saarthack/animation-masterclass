@@ -9,22 +9,42 @@ body {
     height: 100%;
     width: 100%;
 }
-
-#page1,#page2,#page3{
+#page1{
     height: 100vh;
     width: 100%;
-    background-color: rgb(80, 211, 254);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    /* background-color: #111; */
+    background-image: url(https://images.unsplash.com/photo-1662869633285-13fe05236a72?q=80&w=2660&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 #page2{
-    background-color: rgb(133, 197, 218);
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    padding: 60px 0;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #171717;
+    position: relative;
 }
 
-#box{
-    height: 300px;
-    width: 300px;
-    background-color: crimson;
-    border-radius: 10px;
+.marq{
+    padding: 10px;
+    /* background-color: white; */
+    border: 3px solid bisque;
+
+    display: flex;
+    margin-bottom: 50px;
+    gap: 50px;
+    width: fit-content;
+}
+
+.marq h1{
+    font-size: 120px;
+    color: bisque;
+    font-weight: 400;
 }
