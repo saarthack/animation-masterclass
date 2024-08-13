@@ -1,3 +1,8 @@
+@font-face {
+    font-family: monu;
+    src: url(./MonumentExtended-Regular.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,32 +24,93 @@ body {
     position: relative;
 }
 #page2{
-    height: 100vh;
+    min-height: 80vh;
     width: 100%;
     background-color: #111;
     position: relative;
-    padding: 60px 0;
+    padding: 50px 0;
 }
 #page3{
     height: 100vh;
     width: 100%;
-    background-color: #171717;
+    background-color: #111;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
 }
+.textContainer{
+    width: 560px;
+    color: #fff;
+}
+.textContainer h1{
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-family: monu;
+}
+.textContainer p{
+    color: #777;
+
+    width: 90%;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.textContainer button{
+    background-color: #B786B6;
+    color: #fff;
+    padding: 20px 50px;
+    font-family: monu;
+    border: none;
+    border-radius: 5px;
+    font-weight: 100;
+    font-size: 20px;
+}
+.imageContainer{
+    height: 600px;
+    width: 440px;
+    background-color: red;
+    overflow: hidden;
+}
+.imageContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.35;
+}
+
+
 
 .marq{
     padding: 10px;
-    /* background-color: white; */
-    border: 3px solid bisque;
-
     display: flex;
-    margin-bottom: 50px;
     gap: 50px;
     width: fit-content;
 }
 
 .marq h1{
-    font-size: 120px;
-    color: bisque;
-    font-weight: 400;
+    font-size: 100px;
+    color: #B786B6;
+    font-weight: 100;
+    font-family: monu;
+    transform: translateX(-50%);
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
 }
