@@ -9,25 +9,20 @@ body {
     height: 100%;
     width: 100%;
 }
-body{
-    background-color: #111;
-}
 
-#cursor{
-    height: 20px;
-    width: 20px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
 }
-h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #ffffff;
-    mix-blend-mode: difference;
-    font-size: 130px;
-    font-weight: 100;
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(82, 164, 191);
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(7, 103, 134);
 }
