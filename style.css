@@ -10,18 +10,32 @@ body {
     width: 100%;
 }
 
-#page1,#page2,#page3{
-    height: 100vh;
+.swiper-container{
+    height: 100%;
     width: 100%;
-    background-color: lightblue;
+    background-color: #222;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.swiper-wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: #0f0f24;
+    display: flex;
+}
+
+.swiper-slide{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0dbee1;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 3px solid #666;
-}
-#box{
-    height: 250px;
-    width: 250px;
-    background-color: crimson;
+    font-size: 100px;
+    color: #fff;
+    font-weight: 600;
     border-radius: 10px;
 }
