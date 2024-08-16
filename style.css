@@ -2,58 +2,80 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:gilroy;
+    font-family: gilroy;
 }
+
 html,
 body {
     height: 100%;
     width: 100%;
 }
-.swiper{
-    height: 100%;
-    width: 100%;
-    padding: 30px;
 
-    background-color: #f2f2f2;
+body {
+    background-color: #f6f6f6;
 }
 
+.swiper {
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+}
 
-.swiper-slide{
+.swiper-slide {
+    background-color: lightblue;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
-    margin-right: 10px;
-    color: #fff;
     font-weight: 600;
-    flex-shrink: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    background-color: lightseagreen;
+    font-size: 50px;
 }
 
-h1{
-    color: #fff;
-    position: fixed;
-    top: 20%;
-    left: 80%;
-    z-index: 99;
-    cursor: pointer;
-    background-color: crimson;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 20px;
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
 }
-h2{
-    color: #fff;
-    font-size: 20px;
-    position: fixed;
-    top: 80%;
-    left: 10%;
-    z-index: 99;
-    cursor: pointer;
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.swiper-slide {
+    width: 80%;
+    height: 100%;
+    scale: 0.8;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 40%;
+}
+
+.swiper-slide-active{
     background-color: crimson;
-    border-radius: 5px;
-    padding: 5px 10px;
+    scale: 1.1;
+
 }

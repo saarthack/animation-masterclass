@@ -1,23 +1,26 @@
+const progressCircle = document.querySelector(".autoplay-progress svg");
+const progressContent = document.querySelector(".autoplay-progress span");
+
+
 var swiper = new Swiper('.swiper', {
   navigation: {
-    nextEl: "#next-btn",
-    prevEl: "#prev-btn",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-  // rewind: true,
-  loop:true,
-  autoplay:{
-    delay:2500,
-    disableOnInteraction:true
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction:true,
   },
   pagination: {
-    el: '.swiper-pagination',
-    clickable:true,
-    // dynamicBullets:true,
-    // type:'progressbar',
-    // type:'fraction'
+    el: ".swiper-pagination",
   },
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  //   hide:true 
-  // },
+  on: {
+    autoplayTimeLeft(s, time, progress) {
+      progressCircle.style.setProperty("--progress", 1 - progress);
+      progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    }
+  },
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween:30
 })
